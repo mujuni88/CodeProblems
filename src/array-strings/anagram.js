@@ -1,6 +1,4 @@
-"use strict";
-
-export default function anagram(str1, str2){
+function anagram(str1, str2){
     if(typeof str1 !== 'string' || typeof str2 !== 'string'){
         throw new Error('invalid');
     }
@@ -24,3 +22,5 @@ export default function anagram(str1, str2){
     
     return (total === 0);
 }
+export default anagram;
+

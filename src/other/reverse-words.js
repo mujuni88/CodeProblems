@@ -40,8 +40,7 @@ function forEachBackwards(fn) {
 }
 
 function reverseWords(arr) {
-    "use strict";
-    var reversedWords, finalArr = [];
+        var reversedWords, finalArr = [];
 
     reversedWords = splitter(arr, '  ');
     reversedWords.forEach(function (item) {
@@ -52,8 +51,7 @@ function reverseWords(arr) {
 }
 
 function splitter(arr, param) {
-    "use strict";
-
+    
     var temp = [], words = [];
 
     arr.forEach(function (char, i) {
@@ -69,8 +67,7 @@ function splitter(arr, param) {
 }
 
 function mirrorReverse(arr, start, end) {
-    "use strict";
-    var temp;
+        var temp;
 
     while (start < end) {
         temp = arr[start];
@@ -83,8 +80,7 @@ function mirrorReverse(arr, start, end) {
 }
 
 function reverseWords2(arr) {
-    "use strict";
-
+    
     var start = 0, end = arr.length - 1, wordStart = null;
     mirrorReverse(arr, 0, arr.length - 1);
 

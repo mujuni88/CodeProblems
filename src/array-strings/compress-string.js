@@ -1,6 +1,4 @@
-"use strict";
-
-export default function compress(str) {
+function compress(str) {
     if (!str || typeof str !== 'string') {
         throw new Error('Invalid param');
     }
@@ -29,3 +27,6 @@ function getAppendedStr(out, currChar, c) {
     out += (c > 1) ? c : '';
     return out;
 }
+
+export default compress;
+

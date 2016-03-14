@@ -1,6 +1,5 @@
 function Node(data){
-    "use strict";
-    this.data = data;
+        this.data = data;
     this.next = null;
     this.prev = null;
 }

@@ -28,7 +28,6 @@
 
 // return finalArray
 
-"use strict";
 
 if (!Array.prototype.forEachBackwards) {
     Array.prototype.forEachBackwards = forEachBackwards;
@@ -41,8 +40,7 @@ function forEachBackwards(fn) {
 }
 
 function reverseWords(arr) {
-    "use strict";
-    var reversedWords,
+        var reversedWords,
         finalArr = [];
 
     reversedWords = splitter(arr, '  ');
@@ -54,8 +52,7 @@ function reverseWords(arr) {
 }
 
 function splitter(arr, param) {
-    "use strict";
-
+    
     var temp = [],
         words = [];
 
@@ -72,8 +69,7 @@ function splitter(arr, param) {
 }
 
 function mirrorReverse(arr, start, end) {
-    "use strict";
-    var temp;
+        var temp;
 
     while (start < end) {
         temp = arr[start];
@@ -86,8 +82,7 @@ function mirrorReverse(arr, start, end) {
 }
 
 function reverseWords2(arr) {
-    "use strict";
-
+    
     var start = 0,
         end = arr.length - 1,
         wordStart = null;

@@ -3,11 +3,9 @@
  * Binary Search Function
  */
 
-"use strict";
 
 function bsIndex(A, val) {
-    "use strict";
-
+    
     var currIndex,
         minIndex = 0,
         maxIndex = A.length - 1,
@@ -39,8 +37,7 @@ function rec(_x, _x2, _x3, _x4) {
             maxIndex = _x4;
         currIndex = currVal = undefined;
 
-        "use strict";
-        _again = false;
+                _again = false;
         var currIndex = minIndex + maxIndex >> 1;
         var currVal = A[currIndex];
 

@@ -4,7 +4,6 @@
  * Javascript implementation of Binary Search Tree
  */
 
-"use strict";
 
 function BstNode(data) {
     this.data = data;

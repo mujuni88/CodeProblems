@@ -126,6 +126,5 @@ function getArraySum(arr, initVal){
 console.log('ABS Min '+solution2(A));
 
 function log(P,total){
-    "use strict";
-    console.log(`P = ${P}, difference = ${total}`);
+        console.log(`P = ${P}, difference = ${total}`);
 }

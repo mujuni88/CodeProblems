@@ -3,16 +3,14 @@
  */
 
 function Node(key, val){
-    "use strict";
-    this.key = key;
+        this.key = key;
     this.val = val;
     this.right = null;
     this.left = null;
 }
 
 function BinarySearchTree(){
-    "use strict";
-    this.root = null
+        this.root = null
 }
 
 BinarySearchTree.prototype = {
@@ -22,8 +20,7 @@ BinarySearchTree.prototype = {
 };
 
 function add(key, val){
-    "use strict";
-    
+        
     var stack = [];
     if(!this.root){
         this.root = new Node(key, val);
@@ -54,8 +51,7 @@ function add(key, val){
 }
 
 function addRec(key, val){
-    "use strict";
-    this.root = addRecursion(this.root, key, val);
+        this.root = addRecursion(this.root, key, val);
     return this;
 }
 function addRecursion(node, key, val){
@@ -73,8 +69,7 @@ function addRecursion(node, key, val){
 }
 
 function find(key){
-    "use strict";
-    
+        
     var root = this.root;
     
     if(key === root.key){
@@ -118,8 +113,7 @@ function log(root){
 }
 
 function log2(root){
-    "use strict";
-    var stack = [], temp;
+        var stack = [], temp;
     
     if(root){
         stack.push(root);

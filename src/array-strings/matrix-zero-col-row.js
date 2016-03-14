@@ -1,6 +1,5 @@
 function matrixZero(matrix){
-    "use strict";
-    if(!matrix || !matrix.length){
+        if(!matrix || !matrix.length){
         throw new Error('Invalid');
     }
     if(Object.prototype.toString.call(matrix).slice(8,-1) !== 'Array'){

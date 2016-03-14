@@ -46,7 +46,6 @@
  Elements of input arrays can be modified.
  */
 
-"use strict";
 
 var A = [3, 1, 2, 4, 3, 10, 11, 3];
 function solution1(A) {
@@ -130,8 +129,7 @@ function getArraySum(arr, initVal) {
 console.log('ABS Min ' + solution2(A));
 
 function log(P, total) {
-    "use strict";
-    console.log("P = " + P + ", difference = " + total);
+        console.log("P = " + P + ", difference = " + total);
 }
 
 //# sourceMappingURL=abs-difference-compiled.js.map

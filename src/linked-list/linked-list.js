@@ -1,16 +1,13 @@
 function Node(data){
-    "use strict";
-    this.data = data;
+        this.data = data;
     this.next = null;
 }
 
 function LinkedList(){
-    "use strict";
-    this.head = null;
+        this.head = null;
 }
 LinkedList.prototype.push = function(data){
-    "use strict";
-    if(!this.head){
+        if(!this.head){
         this.head = new Node(data);
         return this;
     }
@@ -25,8 +22,7 @@ LinkedList.prototype.push = function(data){
     return this;
 }
 LinkedList.prototype.remove = function(data){
-    "use strict";
-    if(this.head.data === data){
+        if(this.head.data === data){
         this.head = this.head.next;
         return this;
     }

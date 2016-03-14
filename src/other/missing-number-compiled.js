@@ -33,7 +33,6 @@
  100%
  */
 
-"use strict";
 
 function solution(A) {
 

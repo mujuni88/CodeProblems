@@ -65,7 +65,6 @@
 // you can write to stdout for debugging purposes, e.g.
 // console.log('this is a debug message');
 
-"use strict";
 
 function solution(N, A) {
     var operationValue,
@@ -109,8 +108,7 @@ function getArrayWithSetValues(size, val) {
 }
 
 function setArrayValues(arr, val) {
-    "use strict";
-    for (var i = 0; i < arr.length; i++) {
+        for (var i = 0; i < arr.length; i++) {
         arr[i] = val;
     }
 }

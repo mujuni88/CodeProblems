@@ -1,4 +1,3 @@
-"use strict";
 
 function removeDups(str){
     if(!str){

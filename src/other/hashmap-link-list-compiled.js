@@ -1,6 +1,5 @@
 // HashMap Implementation with LinkedList
 
-"use strict";
 
 function Node(key, val) {
     this.key = key;

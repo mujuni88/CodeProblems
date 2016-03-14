@@ -106,8 +106,7 @@ function getArrayWithSetValues(size, val) {
 }
 
 function setArrayValues(arr, val) {
-    "use strict";
-    for (var i = 0; i < arr.length; i++) {
+        for (var i = 0; i < arr.length; i++) {
         arr[i] = val;
     }
 }

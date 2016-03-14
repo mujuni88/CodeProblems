@@ -1,6 +1,5 @@
 function rotateRt(arr){
-    "use strict";
-    if(!arr){
+        if(!arr){
         throw new Error('Invalid param');
     }
     
@@ -10,8 +9,7 @@ function rotateRt(arr){
 }
 
 function rotateLt(arr){
-    "use strict";
-    if(!arr){
+        if(!arr){
         throw new Error('Invalid param');
     }
 
@@ -22,9 +20,9 @@ function rotateLt(arr){
 
 function transpose(arr){
 
-    for(var i = 0; i < arr.length; i++){
-        for(var j = 0; j < i; j++){
-            var temp = arr[i][j];
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < i; j++){
+            let temp = arr[i][j];
             arr[i][j] = arr[j][i];
             arr[j][i] = temp;
         }
@@ -35,7 +33,7 @@ function transpose(arr){
 
 function rotateRight(arr){
     // read backwards
-    for(var r = 0; r < arr.length; r++){
+    for(let r = 0; r < arr.length; r++){
         swap(arr[r]);
     }
     
@@ -43,10 +41,10 @@ function rotateRight(arr){
 }
 
 function rotateLeft(arr){
-    var temp, rLength = arr.length - 1, r = rLength;
+    let temp;
     
-    for(var r = 0; r < arr.length/2; r++){
-        for(var c = 0; c < arr[r].length; c++){
+    for(let r = 0; r < arr.length/2; r++){
+        for(let c = 0; c < arr[r].length; c++){
             temp = arr[r][c];
             arr[r][c] = arr[arr.length - 1 - r][c];
             arr[arr.length - 1 - r][c] = temp;
@@ -55,8 +53,8 @@ function rotateLeft(arr){
     return arr;
 }
 function swap(arr){
-    var temp, tail = arr.length - 1;
-    for(var i = 0; i < tail; i++){
+    let temp, tail = arr.length - 1;
+    for(let i = 0; i < tail; i++){
         temp = arr[i];
         arr[i] = arr[tail];
         arr[tail--] = temp;
@@ -64,11 +62,10 @@ function swap(arr){
 }
 
 function rotate(matrix){
-    "use strict";
-    var temp, first, last;
-    for(var l = 0; l < matrix.length/2; l++){
+        let temp, last;
+    for(let l = 0; l < matrix.length/2; l++){
         last = matrix.length - 1 - l;
-        for(var c = l; c < last; c++){
+        for(let c = l; c < last; c++){
             temp = matrix[l][c];
             
             matrix[l][c] = matrix[matrix.length - 1 - c][l];
@@ -82,11 +79,10 @@ function rotate(matrix){
 }
 
 function rotateL(matrix){
-    "use strict";
-    var top, left, bottom, right, first, last;
-    for(var l = 0; l < matrix.length/2; l++){
+        let top, left, bottom, right, last;
+    for(let l = 0; l < matrix.length/2; l++){
         last = matrix.length - 1 - l;
-        for(var c = l; c < last; c++){
+        for(let c = l; c < last; c++){
             // top first
             top = matrix[matrix.length - 1 - c][l];
             left = matrix[c][last];

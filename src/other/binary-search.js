@@ -5,8 +5,7 @@
 
 
 function bsIndex(A, val){
-    "use strict";
-    
+        
     var currIndex, 
         minIndex = 0,
         maxIndex = A.length - 1,
@@ -29,8 +28,7 @@ function bsIndex(A, val){
 }
 
 function rec(A, val, minIndex, maxIndex){
-    "use strict";
-    var currIndex = (minIndex + maxIndex) >> 1;
+        var currIndex = (minIndex + maxIndex) >> 1;
     var currVal = A[currIndex];
 
     if(currVal === val){

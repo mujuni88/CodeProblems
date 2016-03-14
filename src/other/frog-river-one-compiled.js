@@ -50,7 +50,6 @@
  Elements of input arrays can be modified.
  */
 
-"use strict";
 
 function solution(X, A) {
     // write your code in JavaScript (Node.js 4.0.0)
