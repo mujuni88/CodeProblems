@@ -8,7 +8,7 @@ function LinkedList(key, data){
     this.head = new Node(key, data);
     this.tail = this.head;
 }
-LinkedList.prototype.push = (key, data) => {
+LinkedList.prototype.push = function(key, data) {
     if(!this.head){
         this.head = new Node(key,data);
         this.tail = this.head;
@@ -21,16 +21,16 @@ LinkedList.prototype.push = (key, data) => {
     return this;
 };
 
-LinkedList.prototype.pop = () => {
+LinkedList.prototype.pop = function() {
     let oldHead = this.head;
     this.head = this.head.next;
     return oldHead;
 };
-LinkedList.prototype.peekLast = () => {
+LinkedList.prototype.peekLast = function() {
     return this.tail;
 };
 
-LinkedList.prototype.find = (key) => {
+LinkedList.prototype.find = function(key) {
     if(this.head.key === key){
         return this.head;
     }
@@ -51,7 +51,7 @@ function HashMap(){
     this.list = new Array(this.size);
 }
 
-HashMap.prototype.put = (key, val) => {
+HashMap.prototype.put = function(key, val) {
 
     if(typeof key !== 'string'){
         throw new Error('Key of string type required');
@@ -78,7 +78,7 @@ HashMap.prototype.put = (key, val) => {
 
 };
 
-HashMap.prototype.get = (key) => {
+HashMap.prototype.get = function(key) {
     let index = this.hashFun(key);
     let v = this.list[index];
 
@@ -89,7 +89,7 @@ HashMap.prototype.get = (key) => {
 
     return v;
 };
-HashMap.prototype.hashFun = (key) => {
+HashMap.prototype.hashFun = function(key) {
     let c = 0;
     for(let i = 0; i < key.length; i++){
         c += key.charCodeAt(i);

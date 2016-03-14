@@ -1,9 +1,3 @@
-/**
- * Created by joebm08 on 2/22/16.
- */
-
-'use strict';
-
 function isUniqueMap(str){
     if(typeof str !== 'string'){
         throw new Error('type of string only');
